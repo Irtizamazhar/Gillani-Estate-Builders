@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery | Gillani Estate & Builders</title>
+  <meta name="description" content="Photos of Gillani projects, homes, interiors and construction sites.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="gallery">
+
+  <section class="page-hero">
+    <div class="page-hero__bg"><img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1800&q=80" alt=""></div>
+    <div class="container">
+      <div class="crumbs fade-up"><a href="index.html">Home</a><span>/</span><span>Gallery</span></div>
+      <h1><span class="split-line"><span>Our work,</span></span><span class="split-line"><span>picture by picture.</span></span></h1>
+      <p class="fade-up d1">Completed projects, finished homes and life on our construction sites.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="split-head">
+        <div class="section-head reveal">
+          <span class="eyebrow">Gallery</span>
+          <h2>Browse by category</h2>
+        </div>
+        <div class="filter-tabs reveal" id="galleryTabs">
+          <button class="active" data-filter="all">All</button>
+          <button data-filter="Projects">Projects</button>
+          <button data-filter="Homes">Homes</button>
+          <button data-filter="Interiors">Interiors</button>
+          <button data-filter="Construction">Construction</button>
+        </div>
+      </div>
+      <div class="gallery-grid" id="galleryGrid"></div>
+    </div>
+  </section>
+
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox__close" aria-label="Close">×</button>
+    <button class="lightbox__prev" aria-label="Previous photo">‹</button>
+    <img src="" alt="">
+    <button class="lightbox__next" aria-label="Next photo">›</button>
+    <div class="lightbox__cap"></div>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

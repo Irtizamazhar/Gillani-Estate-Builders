@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maps & Offices | Gillani Estate</title>
+  <meta name="description" content="Find Gillani Estate offices and project locations across Islamabad on the map.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="maps">
+
+  <section class="page-hero">
+    <div class="page-hero__bg"><img src="https://images.unsplash.com/photo-1580041065738-e72023775cdc?auto=format&fit=crop&w=1800&q=80" alt=""></div>
+    <div class="container">
+      <div class="crumbs fade-up"><a href="index.html">Home</a><span>/</span><span>Maps</span></div>
+      <h1><span class="split-line"><span>Find us &amp; our</span></span><span class="split-line"><span>projects on the map.</span></span></h1>
+      <p class="fade-up d1">Visit any of our offices or see exactly where each Gillani development is located.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container maps">
+      <div class="maps__side reveal">
+        <div class="filter-tabs" id="mapTabs">
+          <button data-filter="all">All</button>
+          <button data-filter="Office">Offices</button>
+          <button data-filter="Project">Projects</button>
+        </div>
+        <div class="place-list" id="placeList"></div>
+      </div>
+      <div class="maps__map reveal">
+        <iframe id="mapFrame" title="Location map" loading="lazy" src="about:blank"></iframe>
+        <div class="maps__title" id="mapTitle"></div>
+      </div>
+    </div>
+  </section>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

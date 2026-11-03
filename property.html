@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Property Details | Gillani Estate</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="property">
+
+  <section class="page-hero" style="padding:150px 0 70px">
+    <div class="page-hero__bg"><img id="heroBgImg" src="" alt=""></div>
+    <div class="container">
+      <div class="crumbs fade-up" style="margin:0"><a href="index.html">Home</a><span>/</span><a href="properties.html">Properties</a><span>/</span><span id="crumbTitle"></span></div>
+    </div>
+  </section>
+
+  <section style="padding:50px 0 110px">
+    <div class="container">
+      <div class="gallery" id="gallery"></div>
+
+      <div class="detail">
+        <div>
+          <div class="detail__head reveal" id="detailHead"></div>
+          <div class="spec-row reveal" id="specRow"></div>
+          <div class="reveal">
+            <h3>About this property</h3>
+            <p id="detailDesc" style="color:var(--muted);font-size:1.05rem"></p>
+            <h3>Features & amenities</h3>
+            <ul class="amenities" id="amenities"></ul>
+          </div>
+        </div>
+
+        <aside class="sidebar-card reveal">
+          <div class="agent">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80" alt="Syed Zeeshan Kazmi">
+            <div><b>Syed Zeeshan Kazmi</b><span>Property Consultant</span></div>
+          </div>
+          <form class="form" data-enquiry novalidate>
+            <div><label for="eName">Full name *</label><input id="eName" required placeholder="Your name"></div>
+            <div><label for="ePhone">Phone *</label><input id="ePhone" type="tel" required placeholder="+92 300 0000000"></div>
+            <div><label for="enqMsg">Message</label><textarea id="enqMsg" rows="4"></textarea></div>
+            <button class="btn btn--block" type="submit">Send enquiry</button>
+            <a id="waBtn" class="btn btn--outline btn--block" target="_blank" rel="noopener" href="#">WhatsApp us</a>
+          </form>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--cream">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">You may also like</span>
+        <h2>Similar properties</h2>
+      </div>
+      <div class="grid-3" id="similar"></div>
+    </div>
+  </section>
+
+  <div class="lightbox" id="lightbox"><button aria-label="Close">×</button><img src="" alt=""></div>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

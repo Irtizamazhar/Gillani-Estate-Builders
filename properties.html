@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Properties for Sale & Rent | Gillani Estate</title>
+  <meta name="description" content="Browse verified houses, apartments, plots and commercial property for sale and rent in Islamabad.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="properties">
+
+  <section class="page-hero">
+    <div class="page-hero__bg"><img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=1800&q=80" alt=""></div>
+    <div class="container">
+      <div class="crumbs fade-up"><a href="index.html">Home</a><span>/</span><span>Properties</span></div>
+      <h1><span class="split-line"><span>Find your next</span></span><span class="split-line"><span>address.</span></span></h1>
+      <p class="fade-up d1">Verified homes, apartments, plots and commercial spaces — for sale and rent across Islamabad & Rawalpindi.</p>
+    </div>
+  </section>
+
+  <section style="padding-bottom:110px">
+    <div class="container">
+      <div class="toolbar">
+        <div class="filter-tabs" id="purposeTabs">
+          <button data-purpose="all">All</button>
+          <button data-purpose="sale">Buy</button>
+          <button data-purpose="rent">Rent</button>
+        </div>
+        <label class="field">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+          <input id="fQ" type="search" placeholder="Search area, society or title…" aria-label="Search">
+        </label>
+        <label class="field">
+          <select id="fCity" aria-label="City"><option value="">All cities</option><option>Islamabad</option><option>Rawalpindi</option></select>
+        </label>
+        <label class="field">
+          <select id="fType" aria-label="Property type"><option value="">Any type</option><option>House</option><option>Apartment</option><option>Commercial</option><option>Plot</option></select>
+        </label>
+        <label class="field">
+          <select id="fSort" aria-label="Sort"><option value="newest">Newest first</option><option value="low">Price: low to high</option><option value="high">Price: high to low</option></select>
+        </label>
+      </div>
+
+      <div class="results-bar">
+        <h2>Available properties</h2>
+        <span id="resultCount"></span>
+      </div>
+      <div class="grid-3" id="listGrid"></div>
+    </div>
+  </section>
+
+  <section style="padding:0 0 110px">
+    <div class="container">
+      <div class="cta reveal">
+        <div class="cta__bricks"></div>
+        <div>
+          <span class="eyebrow">Property owners</span>
+          <h2>Want to sell or rent out your property?</h2>
+          <p>List with us and reach thousands of verified buyers and tenants.</p>
+        </div>
+        <div class="cta__actions">
+          <a href="contact.html?type=List%20my%20property" class="btn">List your property
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

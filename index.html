@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gillani Estate | Real Estate & Builders in Islamabad</title>
+  <meta name="description" content="Gillani Estate & Builders — buy, sell, rent and build premium homes, apartments and commercial property in Islamabad since 2005.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="home">
+
+  <!-- ===== Hero ===== -->
+  <section class="hero">
+    <div class="container hero__grid">
+      <div>
+        <span class="eyebrow fade-up">Pakistan's trusted estate & builders</span>
+        <h1>
+          <span class="split-line"><span>Building Dreams,</span></span>
+          <span class="split-line"><span><em>Brick</em> by <em>Brick.</em></span></span>
+        </h1>
+        <p class="hero__lead fade-up d1">From a single plot to landmark towers — we help you buy, sell, rent and build premium property across Islamabad with complete transparency.</p>
+
+        <form class="search fade-up d2" id="heroSearch">
+          <div class="search__tabs">
+            <button type="button" class="search__tab active" data-purpose="sale">Buy</button>
+            <button type="button" class="search__tab" data-purpose="rent">Rent</button>
+            <button type="button" class="search__tab" data-purpose="projects">Projects</button>
+          </div>
+          <div class="search__fields">
+            <div class="search__field">
+              <label for="heroQ">Location</label>
+              <input id="heroQ" type="text" placeholder="Faisal Hills, DHA, F-17…">
+            </div>
+            <div class="search__field">
+              <label for="heroType">Property type</label>
+              <select id="heroType">
+                <option value="">Any type</option>
+                <option>House</option><option>Apartment</option><option>Commercial</option><option>Plot</option>
+              </select>
+            </div>
+            <button class="btn" type="submit">Search
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+          </div>
+        </form>
+
+        <div class="hero__trust fade-up d3">
+          <div><strong>20+</strong><span>Years of excellence</span></div>
+          <div><strong>40+</strong><span>Projects delivered</span></div>
+          <div><strong>15k+</strong><span>Happy families</span></div>
+        </div>
+      </div>
+
+      <!-- Construction scene: bricks laid by JS -->
+      <div class="scene" id="scene" aria-hidden="true">
+        <div class="scene__sun"></div>
+        <div class="building building--side" id="bSide"></div>
+        <div class="building building--side2" id="bSide2"></div>
+        <div class="building building--main" id="bMain"></div>
+        <div class="scene__ground"></div>
+        <div class="scene__badge">
+          <i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 17h18M5 17v-3a7 7 0 0 1 14 0v3M10 7V5h4v2"/></svg></i>
+          <div><small>Construction progress</small><b id="heroPct">0%</b><div class="progress-mini"><span id="heroBar"></span></div></div>
+        </div>
+        <div class="scene__badge scene__badge--top">
+          <i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3 5 6v6c0 4.5 3 7.7 7 9 4-1.3 7-4.5 7-9V6l-7-3z"/><path d="m9 12 2 2 4-4"/></svg></i>
+          <div><small>Approved & verified</small><b>100%</b></div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-hint"><i></i>Scroll</div>
+  </section>
+
+  <!-- ===== Marquee ===== -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee__track">
+      <span class="marquee__item">Faisal Hills</span><span class="marquee__item">DHA Islamabad</span><span class="marquee__item">F-17 Tele Gardens</span><span class="marquee__item">B-17 Multi Gardens</span><span class="marquee__item">Bahria Town</span><span class="marquee__item">Blue Area</span><span class="marquee__item">E-11</span><span class="marquee__item">Faisal Town</span>
+      <span class="marquee__item">Faisal Hills</span><span class="marquee__item">DHA Islamabad</span><span class="marquee__item">F-17 Tele Gardens</span><span class="marquee__item">B-17 Multi Gardens</span><span class="marquee__item">Bahria Town</span><span class="marquee__item">Blue Area</span><span class="marquee__item">E-11</span><span class="marquee__item">Faisal Town</span>
+    </div>
+  </div>
+
+  <!-- ===== Featured properties ===== -->
+  <section class="section section--cream">
+    <div class="container">
+      <div class="split-head">
+        <div class="section-head reveal">
+          <span class="eyebrow">Curated selection</span>
+          <h2>Featured Properties</h2>
+          <p>Hand-picked homes, apartments and commercial spaces — verified by our team.</p>
+        </div>
+        <div class="filter-tabs reveal" id="featuredTabs">
+          <button class="active" data-filter="all">Featured</button>
+          <button data-filter="sale">For Sale</button>
+          <button data-filter="rent">For Rent</button>
+        </div>
+      </div>
+      <div class="grid-3" id="featuredGrid"></div>
+      <div style="text-align:center;margin-top:50px" class="reveal">
+        <a href="properties.html" class="btn btn--dark">View all properties
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== How we build (scroll-driven) ===== -->
+  <section class="build-story" id="buildStory">
+    <div class="container build-story__grid">
+      <div class="build-story__sticky">
+        <div class="build-story__stage">
+          <div class="build-story__pct" id="storyPct">0%<small id="storyLabel">Foundation</small></div>
+          <div class="building" id="storyBuilding"></div>
+          <div class="scene__ground"></div>
+        </div>
+      </div>
+      <div class="steps">
+        <div class="section-head" style="margin-bottom:0;padding-top:12vh">
+          <span class="eyebrow">How we build</span>
+          <h2>Scroll to watch your home rise.</h2>
+          <p>Every Gillani project follows a proven four-stage process — engineered, inspected and delivered on time.</p>
+        </div>
+        <div class="step">
+          <span class="step__num">01 Foundation</span>
+          <h3>Solid ground, approved plans</h3>
+          <p>Soil testing, CDA/RDA-approved drawings and reinforced foundations designed by certified structural engineers.</p>
+          <ul><li>Soil & site survey</li><li>Approved architectural drawings</li><li>Earthquake-resistant design</li></ul>
+        </div>
+        <div class="step">
+          <span class="step__num">02 Structure</span>
+          <h3>Grey structure, floor by floor</h3>
+          <p>Premium cement, Grade-60 steel and first-class bricks — every course laid and checked by experienced masons.</p>
+          <ul><li>Grade-60 steel & quality cement</li><li>Daily site supervision</li><li>Third-party quality checks</li></ul>
+        </div>
+        <div class="step">
+          <span class="step__num">03 Finishing</span>
+          <h3>Finishes that feel like home</h3>
+          <p>Imported fittings, modern kitchens, woodwork and lighting — finished to the exact standard we promised.</p>
+          <ul><li>Modern kitchens & wardrobes</li><li>Premium tiles & fixtures</li><li>Electrical & plumbing tested</li></ul>
+        </div>
+        <div class="step">
+          <span class="step__num">04 Handover</span>
+          <h3>Keys in your hand — on time</h3>
+          <p>Clear documentation, transparent payments and a complete walkthrough before we hand over the keys.</p>
+          <ul><li>Transparent documentation</li><li>On-time possession</li><li>After-sales support</li></ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Projects ===== -->
+  <section class="section">
+    <div class="container">
+      <div class="split-head">
+        <div class="section-head reveal">
+          <span class="eyebrow">Our developments</span>
+          <h2>Landmark Projects</h2>
+          <p>Residential, commercial and mixed-use developments built by Gillani Builders.</p>
+        </div>
+        <a href="projects.html" class="link-arrow reveal">All projects
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+      <div class="projects-grid" id="homeProjects"></div>
+    </div>
+  </section>
+
+  <!-- ===== Why us ===== -->
+  <section class="section section--cream">
+    <div class="container why">
+      <div class="why__media reveal">
+        <img class="reveal-img" src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=900&q=80" alt="Architects reviewing building plans">
+        <img class="why__img2 reveal-img" src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=600&q=80" alt="Construction site">
+        <div class="why__exp"><b>20+</b><span>Years of building<br>trust in Islamabad</span></div>
+      </div>
+      <div>
+        <div class="section-head reveal" style="margin-bottom:0">
+          <span class="eyebrow">Why Gillani Estate</span>
+          <h2>Real estate & construction under one trusted roof.</h2>
+          <p>Whether you're buying your first apartment or building a family home from the ground up, our team handles everything — honestly and professionally.</p>
+        </div>
+        <div class="features">
+          <div class="feature reveal" style="--rd:.05s">
+            <div class="feature__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3 5 6v6c0 4.5 3 7.7 7 9 4-1.3 7-4.5 7-9V6l-7-3z"/><path d="m9 12 2 2 4-4"/></svg></div>
+            <div><h4>Verified listings</h4><p>Every property is title-checked and personally inspected.</p></div>
+          </div>
+          <div class="feature reveal" style="--rd:.1s">
+            <div class="feature__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 17h18M5 17v-3a7 7 0 0 1 14 0v3M10 7V5h4v2"/></svg></div>
+            <div><h4>In-house builders</h4><p>Planning to keys — engineers and skilled craftsmen on every site.</p></div>
+          </div>
+          <div class="feature reveal" style="--rd:.15s">
+            <div class="feature__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></div>
+            <div><h4>Smart investment</h4><p>Market insight to help you buy at the right price and location.</p></div>
+          </div>
+          <div class="feature reveal" style="--rd:.2s">
+            <div class="feature__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="8" cy="15" r="4"/><path d="m11 12 9-9M17 6l3 3M15 8l2 2"/></svg></div>
+            <div><h4>On-time handover</h4><p>Transparent payment plans and possession exactly as promised.</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Stats ===== -->
+  <section class="section section--dark" style="padding:90px 0">
+    <div class="container stats">
+      <div class="stat reveal"><b data-count="20" data-suffix="+">0</b><span>Years of experience</span></div>
+      <div class="stat reveal" style="--rd:.1s"><b data-count="40" data-suffix="+">0</b><span>Projects completed</span></div>
+      <div class="stat reveal" style="--rd:.2s"><b data-count="15000" data-suffix="+">0</b><span>Happy families</span></div>
+      <div class="stat reveal" style="--rd:.3s"><b data-count="1200" data-suffix="+">0</b><span>Units delivered</span></div>
+    </div>
+  </section>
+
+  <!-- ===== Testimonials ===== -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head center reveal" style="margin-bottom:20px">
+        <span class="eyebrow">Client stories</span>
+        <h2>What our clients say</h2>
+      </div>
+      <div class="testi reveal" id="testi">
+        <div class="testi__quote-mark">“</div>
+        <div class="testi__slides"></div>
+        <div class="testi__dots"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA ===== -->
+  <section style="padding:0 0 110px">
+    <div class="container">
+      <div class="cta reveal">
+        <div class="cta__bricks"></div>
+        <div>
+          <span class="eyebrow">Build with us</span>
+          <h2>Ready to build your dream home?</h2>
+          <p>Get a free consultation and construction estimate from our engineers.</p>
+        </div>
+        <div class="cta__actions">
+          <a href="contact.html?type=Construction" class="btn">Get free estimate
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <a href="tel:+92514500007" class="btn btn--ghost">Call 051-4500007</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
